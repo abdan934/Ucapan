@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ulang Tahun Romantis</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6b6b;
+        }
+
+        .birthday-animation {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            margin: 50px auto;
+            background: url('gifHD.gif') no-repeat center center;
+            background-size: cover;
+        }
+
+        .birthday-message {
+            text-align: center;
+            font-size: 24px;
+            color: #ff6b6b;
+            margin-top: 30px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 20% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .close {
+            color: #888;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .modal-message {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: pink;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+        .button:hover {
+    background-color: #ff4f4f;
+    }
+
+    .button:focus {
+    outline: none;
+    }
+
+    .modal-content {
+  text-align: center;
+}
+
+.additional-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.additional-button:hover {
+  background-color: #ff4f4f;
+}
+
+.additional-button:focus {
+  outline: none;
+}
+
+
+.additional-modal-content {
+  max-width: 500px;
+  margin: 20% auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #888;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.additional-modal-content .close {
+  color: #888;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.additional-modal-content .additional-modal-message {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-top: 30px;
+}
+
+.additional-modal-content .additional-modal-message p {
+  margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Ulang Tahun Cantik!</h1>
+        <div class="birthday-animation"></div>
+        <div class="birthday-message">
+            <button onclick="openModal()" class="button">by Mamas</button>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-message">
+            <p>Selamat Ulang Tahun, ili!</p>
+            <p>Horeeee!!!! Akhire ili sampun kepala 2 hehehe</p>
+            <p>Semoga ili sehat selalu nggih, ampun cepet ngambek e, klih dilancarna terus dalam kehidupan intine doa yang terbaik dari mamas</p>
+            <p>Maaf nggih mamas nembe bisa gawe ucapan kek niki hehe. Selamat ulang tahun Ili!</p>
+        </div>
+        <button class="additional-button" onclick="openAdditionalModal()">Ampun di pencet</button>
+        </div>
+      </div>
+
+    <div id="additionalModal" class="modal">
+        <div class="modal-content additional-modal-content">
+          <span class="close" onclick="closeAdditionalModal()">&times;</span>
+          <div class="additional-modal-message">
+            <p>Hehehe</p>
+            <p>Coba Lagi Wleee!!!</p>
+            <p>Menyusul nggih hadiah e</p>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        function openModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+        function openAdditionalModal() {
+  var additionalModal = document.getElementById("additionalModal");
+  additionalModal.style.display = "block";
+}
+
+function closeAdditionalModal() {
+  var additionalModal = document.getElementById("additionalModal");
+  additionalModal.style.display = "none";
+}
+
+    </script>
+</body>
+</html>
+
